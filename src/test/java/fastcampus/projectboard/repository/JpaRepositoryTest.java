@@ -2,6 +2,7 @@ package fastcampus.projectboard.repository;
 
 import fastcampus.projectboard.config.JpaConfig;
 import fastcampus.projectboard.domain.Article;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.*;
 
 @DisplayName("JPA 연결 테스트")
+@Disabled
 @Import(JpaConfig.class)
 @DataJpaTest
 class JpaRepositoryTest {
